@@ -59,3 +59,9 @@ body.state-off :is(.state-on, .state-unknown) {
 button {
     font-size: 1em;
 }
+
+.app-description {
+    max-width: 420px;
+    margin: calc(var(--spacing) * -1) 0 0;
+    opacity: 0.75;
+}

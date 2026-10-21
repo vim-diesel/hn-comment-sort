@@ -4,7 +4,7 @@
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is HN Comment Sort. You should tell us what your extension does here.",
+        "message": "Sort Hacker News comments and show only top-level comments.",
         "description": "Description of what the extension does."
     }
 }

@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="popup.css">
     <script type="module" src="popup.js"></script>
 </head>
 <body>
-    <strong>Hello World!</strong>
+    <header class="hns-header">
+        <h1>HN Comment Sort</h1>
+    </header>
+
+    <main class="hns-main">
+        <label class="hns-label" for="sort-mode">Comment order</label>
+        <select id="sort-mode" class="hns-select">
+            <option value="rank">Top (HN rank)</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="replies">Most replies</option>
+        </select>
+
+        <label class="hns-check">
+            <input type="checkbox" id="sort-replies">
+            <span>Also sort replies</span>
+        </label>
+
+        <label class="hns-check">
+            <input type="checkbox" id="top-level">
+            <span>Start with top-level comments only</span>
+        </label>
+
+        <label class="hns-check">
+            <input type="checkbox" id="show-toolbar">
+            <span>Show toolbar on HN pages</span>
+        </label>
+
+        <div class="hns-footer-row">
+            <button type="button" id="reset" class="hns-reset">Reset to defaults</button>
+            <span id="status" class="hns-status" aria-live="polite"></span>
+        </div>
+    </main>
+
+    <footer class="hns-note">
+        <p>Hacker News does not publish comment scores, so “Top” follows HN's own ranking.</p>
+    </footer>
 </body>
 </html>
