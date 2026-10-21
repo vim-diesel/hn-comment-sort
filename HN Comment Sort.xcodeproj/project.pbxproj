@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6351A2F73088EDD40097DA6E /* HN Comment Sort Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6351A2F63088EDD40097DA6E /* HN Comment Sort Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6351A3013088EDD40097DA6E /* HN Comment Sort Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6351A3003088EDD40097DA6E /* HN Comment Sort Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6351A2F83088EDD40097DA6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6351A2BD3088EDD30097DA6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6351A2F53088EDD40097DA6E;
+			remoteInfo = "HN Comment Sort Extension (iOS)";
+		};
+		6351A3023088EDD40097DA6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6351A2BD3088EDD30097DA6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6351A2FF3088EDD40097DA6E;
+			remoteInfo = "HN Comment Sort Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6351A3293088EDD40097DA6E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				6351A2F73088EDD40097DA6E /* HN Comment Sort Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+		6351A3333088EDD40097DA6E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				6351A3013088EDD40097DA6E /* HN Comment Sort Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6351A2D93088EDD40097DA6E /* HN Comment Sort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HN Comment Sort.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6351A2EB3088EDD40097DA6E /* HN Comment Sort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HN Comment Sort.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6351A2F63088EDD40097DA6E /* HN Comment Sort Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HN Comment Sort Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6351A3003088EDD40097DA6E /* HN Comment Sort Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HN Comment Sort Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6351A3243088EDD40097DA6E /* Exceptions for "Shared (App)" folder in "HN Comment Sort (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Main.html",
+				Assets.xcassets,
+				Resources/Icon.png,
+				Resources/Script.js,
+				Resources/Style.css,
+				ViewController.swift,
+			);
+			target = 6351A2D83088EDD40097DA6E /* HN Comment Sort (iOS) */;
+		};
+		6351A3283088EDD40097DA6E /* Exceptions for "iOS (Extension)" folder in "HN Comment Sort Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6351A2F53088EDD40097DA6E /* HN Comment Sort Extension (iOS) */;
+		};
+		6351A32D3088EDD40097DA6E /* Exceptions for "iOS (App)" folder in "HN Comment Sort (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6351A2D83088EDD40097DA6E /* HN Comment Sort (iOS) */;
+		};
+		6351A32E3088EDD40097DA6E /* Exceptions for "Shared (App)" folder in "HN Comment Sort (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Main.html",
+				Assets.xcassets,
+				Resources/Icon.png,
+				Resources/Script.js,
+				Resources/Style.css,
+				ViewController.swift,
+			);
+			target = 6351A2EA3088EDD40097DA6E /* HN Comment Sort (macOS) */;
+		};
+		6351A3323088EDD40097DA6E /* Exceptions for "macOS (Extension)" folder in "HN Comment Sort Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6351A2FF3088EDD40097DA6E /* HN Comment Sort Extension (macOS) */;
+		};
+		6351A3373088EDD40097DA6E /* Exceptions for "Shared (Extension)" folder in "HN Comment Sort Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/background.js,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.css,
+				Resources/popup.html,
+				Resources/popup.js,
+				SafariWebExtensionHandler.swift,
+			);
+			target = 6351A2F53088EDD40097DA6E /* HN Comment Sort Extension (iOS) */;
+		};
+		6351A3383088EDD40097DA6E /* Exceptions for "Shared (Extension)" folder in "HN Comment Sort Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/background.js,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.css,
+				Resources/popup.html,
+				Resources/popup.js,
+				SafariWebExtensionHandler.swift,
+			);
+			target = 6351A2FF3088EDD40097DA6E /* HN Comment Sort Extension (macOS) */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6351A2C13088EDD30097DA6E /* Shared (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6351A3243088EDD40097DA6E /* Exceptions for "Shared (App)" folder in "HN Comment Sort (iOS)" target */,
+				6351A32E3088EDD40097DA6E /* Exceptions for "Shared (App)" folder in "HN Comment Sort (macOS)" target */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		6351A2CA3088EDD40097DA6E /* Shared (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6351A3373088EDD40097DA6E /* Exceptions for "Shared (Extension)" folder in "HN Comment Sort Extension (iOS)" target */,
+				6351A3383088EDD40097DA6E /* Exceptions for "Shared (Extension)" folder in "HN Comment Sort Extension (macOS)" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		6351A2DB3088EDD40097DA6E /* iOS (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6351A32D3088EDD40097DA6E /* Exceptions for "iOS (App)" folder in "HN Comment Sort (iOS)" target */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		6351A2EC3088EDD40097DA6E /* macOS (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		6351A2FA3088EDD40097DA6E /* iOS (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6351A3283088EDD40097DA6E /* Exceptions for "iOS (Extension)" folder in "HN Comment Sort Extension (iOS)" target */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		6351A3043088EDD40097DA6E /* macOS (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6351A3323088EDD40097DA6E /* Exceptions for "macOS (Extension)" folder in "HN Comment Sort Extension (macOS)" target */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6351A2D63088EDD40097DA6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		6351A2E83088EDD40097DA6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		6351A2F33088EDD40097DA6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		6351A2FD3088EDD40097DA6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6351A2BC3088EDD30097DA6E = {
+			isa = PBXGroup;
+			children = (
+				6351A2C13088EDD30097DA6E /* Shared (App) */,
+				6351A2CA3088EDD40097DA6E /* Shared (Extension) */,
+				6351A2DB3088EDD40097DA6E /* iOS (App) */,
+				6351A2EC3088EDD40097DA6E /* macOS (App) */,
+				6351A2FA3088EDD40097DA6E /* iOS (Extension) */,
+				6351A3043088EDD40097DA6E /* macOS (Extension) */,
+				6351A2DA3088EDD40097DA6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6351A2DA3088EDD40097DA6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6351A2D93088EDD40097DA6E /* HN Comment Sort.app */,
+				6351A2EB3088EDD40097DA6E /* HN Comment Sort.app */,
+				6351A2F63088EDD40097DA6E /* HN Comment Sort Extension.appex */,
+				6351A3003088EDD40097DA6E /* HN Comment Sort Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6351A2D83088EDD40097DA6E /* HN Comment Sort (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6351A32A3088EDD40097DA6E /* Build configuration list for PBXNativeTarget "HN Comment Sort (iOS)" */;
+			buildPhases = (
+				6351A2D53088EDD40097DA6E /* Sources */,
+				6351A2D63088EDD40097DA6E /* Frameworks */,
+				6351A2D73088EDD40097DA6E /* Resources */,
+				6351A3293088EDD40097DA6E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6351A2F93088EDD40097DA6E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6351A2DB3088EDD40097DA6E /* iOS (App) */,
+			);
+			name = "HN Comment Sort (iOS)";
+			productName = "HN Comment Sort (iOS)";
+			productReference = 6351A2D93088EDD40097DA6E /* HN Comment Sort.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6351A2EA3088EDD40097DA6E /* HN Comment Sort (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6351A3343088EDD40097DA6E /* Build configuration list for PBXNativeTarget "HN Comment Sort (macOS)" */;
+			buildPhases = (
+				6351A2E73088EDD40097DA6E /* Sources */,
+				6351A2E83088EDD40097DA6E /* Frameworks */,
+				6351A2E93088EDD40097DA6E /* Resources */,
+				6351A3333088EDD40097DA6E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6351A3033088EDD40097DA6E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6351A2EC3088EDD40097DA6E /* macOS (App) */,
+			);
+			name = "HN Comment Sort (macOS)";
+			productName = "HN Comment Sort (macOS)";
+			productReference = 6351A2EB3088EDD40097DA6E /* HN Comment Sort.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6351A2F53088EDD40097DA6E /* HN Comment Sort Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6351A3253088EDD40097DA6E /* Build configuration list for PBXNativeTarget "HN Comment Sort Extension (iOS)" */;
+			buildPhases = (
+				6351A2F23088EDD40097DA6E /* Sources */,
+				6351A2F33088EDD40097DA6E /* Frameworks */,
+				6351A2F43088EDD40097DA6E /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				6351A2FA3088EDD40097DA6E /* iOS (Extension) */,
+			);
+			name = "HN Comment Sort Extension (iOS)";
+			productName = "HN Comment Sort Extension (iOS)";
+			productReference = 6351A2F63088EDD40097DA6E /* HN Comment Sort Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6351A2FF3088EDD40097DA6E /* HN Comment Sort Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6351A32F3088EDD40097DA6E /* Build configuration list for PBXNativeTarget "HN Comment Sort Extension (macOS)" */;
+			buildPhases = (
+				6351A2FC3088EDD40097DA6E /* Sources */,
+				6351A2FD3088EDD40097DA6E /* Frameworks */,
+				6351A2FE3088EDD40097DA6E /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				6351A3043088EDD40097DA6E /* macOS (Extension) */,
+			);
+			name = "HN Comment Sort Extension (macOS)";
+			productName = "HN Comment Sort Extension (macOS)";
+			productReference = 6351A3003088EDD40097DA6E /* HN Comment Sort Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6351A2BD3088EDD30097DA6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					6351A2D83088EDD40097DA6E = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					6351A2EA3088EDD40097DA6E = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					6351A2F53088EDD40097DA6E = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					6351A2FF3088EDD40097DA6E = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = 6351A2C03088EDD30097DA6E /* Build configuration list for PBXProject "HN Comment Sort" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6351A2BC3088EDD30097DA6E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6351A2DA3088EDD40097DA6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6351A2D83088EDD40097DA6E /* HN Comment Sort (iOS) */,
+				6351A2EA3088EDD40097DA6E /* HN Comment Sort (macOS) */,
+				6351A2F53088EDD40097DA6E /* HN Comment Sort Extension (iOS) */,
+				6351A2FF3088EDD40097DA6E /* HN Comment Sort Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6351A2D73088EDD40097DA6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		6351A2E93088EDD40097DA6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		6351A2F43088EDD40097DA6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		6351A2FE3088EDD40097DA6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6351A2D53088EDD40097DA6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		6351A2E73088EDD40097DA6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		6351A2F23088EDD40097DA6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		6351A2FC3088EDD40097DA6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6351A2F93088EDD40097DA6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6351A2F53088EDD40097DA6E /* HN Comment Sort Extension (iOS) */;
+			targetProxy = 6351A2F83088EDD40097DA6E /* PBXContainerItemProxy */;
+		};
+		6351A3033088EDD40097DA6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6351A2FF3088EDD40097DA6E /* HN Comment Sort Extension (macOS) */;
+			targetProxy = 6351A3023088EDD40097DA6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6351A3263088EDD40097DA6E /* Debug configuration for PBXNativeTarget "HN Comment Sort Extension (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SG98J9CD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HN Comment Sort Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "devflowtech.HN-Comment-Sort.Extension";
+				PRODUCT_NAME = "HN Comment Sort Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6351A3273088EDD40097DA6E /* Release configuration for PBXNativeTarget "HN Comment Sort Extension (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SG98J9CD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HN Comment Sort Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "devflowtech.HN-Comment-Sort.Extension";
+				PRODUCT_NAME = "HN Comment Sort Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6351A32B3088EDD40097DA6E /* Debug configuration for PBXNativeTarget "HN Comment Sort (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SG98J9CD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HN Comment Sort";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "devflowtech.HN-Comment-Sort";
+				PRODUCT_NAME = "HN Comment Sort";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6351A32C3088EDD40097DA6E /* Release configuration for PBXNativeTarget "HN Comment Sort (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SG98J9CD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HN Comment Sort";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "devflowtech.HN-Comment-Sort";
+				PRODUCT_NAME = "HN Comment Sort";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6351A3303088EDD40097DA6E /* Debug configuration for PBXNativeTarget "HN Comment Sort Extension (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SG98J9CD3;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HN Comment Sort Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "devflowtech.HN-Comment-Sort.Extension";
+				PRODUCT_NAME = "HN Comment Sort Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6351A3313088EDD40097DA6E /* Release configuration for PBXNativeTarget "HN Comment Sort Extension (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SG98J9CD3;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HN Comment Sort Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "devflowtech.HN-Comment-Sort.Extension";
+				PRODUCT_NAME = "HN Comment Sort Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6351A3353088EDD40097DA6E /* Debug configuration for PBXNativeTarget "HN Comment Sort (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SG98J9CD3;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "HN Comment Sort";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "devflowtech.HN-Comment-Sort";
+				PRODUCT_NAME = "HN Comment Sort";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6351A3363088EDD40097DA6E /* Release configuration for PBXNativeTarget "HN Comment Sort (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SG98J9CD3;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "HN Comment Sort";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "devflowtech.HN-Comment-Sort";
+				PRODUCT_NAME = "HN Comment Sort";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6351A3393088EDD40097DA6E /* Debug configuration for PBXProject "HN Comment Sort" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3SG98J9CD3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6351A33A3088EDD40097DA6E /* Release configuration for PBXProject "HN Comment Sort" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3SG98J9CD3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6351A2C03088EDD30097DA6E /* Build configuration list for PBXProject "HN Comment Sort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6351A3393088EDD40097DA6E /* Debug configuration for PBXProject "HN Comment Sort" */,
+				6351A33A3088EDD40097DA6E /* Release configuration for PBXProject "HN Comment Sort" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		6351A3253088EDD40097DA6E /* Build configuration list for PBXNativeTarget "HN Comment Sort Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6351A3263088EDD40097DA6E /* Debug configuration for PBXNativeTarget "HN Comment Sort Extension (iOS)" */,
+				6351A3273088EDD40097DA6E /* Release configuration for PBXNativeTarget "HN Comment Sort Extension (iOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		6351A32A3088EDD40097DA6E /* Build configuration list for PBXNativeTarget "HN Comment Sort (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6351A32B3088EDD40097DA6E /* Debug configuration for PBXNativeTarget "HN Comment Sort (iOS)" */,
+				6351A32C3088EDD40097DA6E /* Release configuration for PBXNativeTarget "HN Comment Sort (iOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		6351A32F3088EDD40097DA6E /* Build configuration list for PBXNativeTarget "HN Comment Sort Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6351A3303088EDD40097DA6E /* Debug configuration for PBXNativeTarget "HN Comment Sort Extension (macOS)" */,
+				6351A3313088EDD40097DA6E /* Release configuration for PBXNativeTarget "HN Comment Sort Extension (macOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		6351A3343088EDD40097DA6E /* Build configuration list for PBXNativeTarget "HN Comment Sort (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6351A3353088EDD40097DA6E /* Debug configuration for PBXNativeTarget "HN Comment Sort (macOS)" */,
+				6351A3363088EDD40097DA6E /* Release configuration for PBXNativeTarget "HN Comment Sort (macOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6351A2BD3088EDD30097DA6E /* Project object */;
+	validationLevel = 1;
+}
