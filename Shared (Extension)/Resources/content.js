@@ -7,6 +7,41 @@
 (() => {
     "use strict";
 
+    // Safari can evaluate this content script more than once for the same
+    // page, and a second installed copy of the extension can inject alongside
+    // the first. Claim the document synchronously, before any await, so only
+    // one instance ever builds the toolbar and per-comment expanders. The
+    // marker lives in the DOM because isolated worlds do not share globals.
+    const INSTANCE_ATTR = "data-hns-instance";
+
+    function claimDocument() {
+        const root = document.documentElement;
+        if (root.hasAttribute(INSTANCE_ATTR)) return false;
+
+        root.setAttribute(INSTANCE_ATTR, "");
+
+        // Remove the UI a previous instance left behind if it is no longer
+        // running, so a re-injected script starts from a clean page.
+        for (const node of document.querySelectorAll(".hns-bar, .hns-expander")) {
+            node.remove();
+        }
+        for (const row of document.querySelectorAll("tr.comtr.hns-hidden, tr.comtr.hns-flash")) {
+            row.classList.remove("hns-hidden", "hns-flash");
+        }
+        for (const table of document.querySelectorAll("table.hns-reordering")) {
+            table.classList.remove("hns-reordering");
+        }
+        root.classList.remove("hns-top-only");
+
+        return true;
+    }
+
+    if (!claimDocument()) return;
+
+    window.addEventListener("pagehide", () => {
+        document.documentElement.removeAttribute(INSTANCE_ATTR);
+    });
+
     const DEFAULTS = Object.freeze({
         sortMode: "rank",
         sortReplies: false,
