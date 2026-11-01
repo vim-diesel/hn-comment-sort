@@ -161,13 +161,16 @@
 
             const toggle = row.querySelector("a.togg");
             const replyValue = Number.parseInt(toggle?.getAttribute("n") ?? "", 10);
+            // HN's n attribute counts the comment itself plus its descendants;
+            // we only want the descendants.
+            const replyCount = Number.isFinite(replyValue) ? Math.max(0, replyValue - 1) : 0;
 
             return {
                 id: row.id || `hns-${index}`,
                 row,
                 indent: Number.isFinite(indentValue) ? indentValue : 0,
                 timestamp,
-                replyCount: Number.isFinite(replyValue) ? replyValue : 0,
+                replyCount,
                 domIndex: index,
                 parent: null,
                 children: [],
@@ -309,6 +312,65 @@
         }
     }
 
+    // HN's prev/next links are baked in at render time and assume the original
+    // document order: prev targets the previous sibling, next targets the next
+    // comment after this comment's subtree. Reordering rows invalidates them,
+    // so point them at the same relative positions in the new visual order.
+    function updateNavLinks(ordered) {
+        for (let index = 0; index < ordered.length; index += 1) {
+            const comment = ordered[index];
+            const navs = comment.row.querySelector(".navs");
+            if (!navs) continue;
+
+            let previous = null;
+            for (let cursor = index - 1; cursor >= 0; cursor -= 1) {
+                const candidate = ordered[cursor];
+                if (candidate.indent > comment.indent) continue;
+                if (candidate.indent === comment.indent) previous = candidate;
+                break;
+            }
+
+            let next = null;
+            for (let cursor = index + 1; cursor < ordered.length; cursor += 1) {
+                const candidate = ordered[cursor];
+                if (candidate.indent <= comment.indent) {
+                    next = candidate;
+                    break;
+                }
+            }
+
+            for (const link of navs.querySelectorAll("a")) {
+                const label = link.textContent;
+                if (label === "prev") setNavLink(link, previous);
+                else if (label === "next") setNavLink(link, next);
+            }
+        }
+    }
+
+    function setNavLink(link, target) {
+        const separator = link.previousSibling;
+
+        if (target) {
+            link.setAttribute("href", `#${target.id}`);
+            link.hidden = false;
+            if (link.dataset.hnsSeparator !== undefined) {
+                if (separator && separator.nodeType === Node.TEXT_NODE) {
+                    separator.nodeValue = link.dataset.hnsSeparator;
+                }
+                delete link.dataset.hnsSeparator;
+            }
+            return;
+        }
+
+        // No equivalent neighbour in the sorted order; hide the link the way
+        // HN would at the ends of the thread.
+        link.hidden = true;
+        if (separator && separator.nodeType === Node.TEXT_NODE && link.dataset.hnsSeparator === undefined) {
+            link.dataset.hnsSeparator = separator.nodeValue;
+            separator.nodeValue = "";
+        }
+    }
+
     function captureAnchor() {
         if (!state.table) return null;
 
@@ -360,7 +422,9 @@
     function applyLayout({ keepScroll = false } = {}) {
         const anchor = keepScroll ? null : captureAnchor();
         sortTree();
-        reorderRows(flatten(state.roots));
+        const ordered = flatten(state.roots);
+        reorderRows(ordered);
+        updateNavLinks(ordered);
         applyVisibility();
         if (anchor) restoreAnchor(anchor);
     }
