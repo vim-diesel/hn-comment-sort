@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "HN Comment Sort",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "Sort Hacker News comments and show only top-level comments.",
+        "description": "Description of what the extension does."
+    }
+}
