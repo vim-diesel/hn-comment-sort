@@ -1,0 +1,14 @@
+// Copied to local.xcconfig by make setup/build/install.
+// local.xcconfig is private and ignored by Git. Edit that copy, not this template.
+
+// Local ad-hoc signing: no Apple account or paid membership required.
+// Enable Allow unsigned extensions in Safari to use this build.
+CODE_SIGN_STYLE = Manual
+CODE_SIGN_IDENTITY = -
+DEVELOPMENT_TEAM =
+
+// Optional: use an Apple Development identity already installed on this Mac.
+// Replace the three settings above with these (and supply your own team ID):
+// CODE_SIGN_STYLE = Automatic
+// CODE_SIGN_IDENTITY = Apple Development
+// DEVELOPMENT_TEAM = YOUR_TEAM_ID
